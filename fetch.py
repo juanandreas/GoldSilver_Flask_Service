@@ -36,9 +36,7 @@ def extract_data_to_csv(url):
 
     # print(schema_arr)
     # print(dates_col)
-    # print(historical_prices_col)
-    print(schema_arr[0])
-    print(schema_arr[1])
+
     d = {}
     d[schema_arr[0]] = dates_col
     d[schema_arr[1]] = historical_prices_col
