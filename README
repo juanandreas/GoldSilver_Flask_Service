@@ -1,0 +1,31 @@
+Welcome to my Coding Challenge for Big Data Federation Inc.
+
+    -   fetch.py is a program to fetch the historical prices and dates of gold and silver from these 2 URLs:
+
+        https://www.investing.com/commodities/gold-historical-data
+        https://www.investing.com/commodities/silver-historical-data
+
+        and store them locally in a csv file.
+
+    -   app.py is a Flask API that Create an endpoint that will accept HTTP GET with the below arguments, 
+        and returns a json time series, mean and variance computed over the specified period.
+
+        * start_date - required (iso format like 2017-05-10)
+        * end_date - required (iso format like 2017-05-22)
+        * commodity_type - required (gold, silver)
+
+        GET request example with curl:
+        curl 'http://0.0.0.0:8080/commodity?start_date=2019-04-04&end_date=2019-05-03&commodity_type=gold'
+
+
+To create data locally, pulled from the two URLs above:
+
+    $ python3 fetch.py
+
+To run Flask server:
+
+    $ python3 app.py
+
+In the case that programs do not run because of dependencies:
+
+    $ pip3 install -r requirements.txt
