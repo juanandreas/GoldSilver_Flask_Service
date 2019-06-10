@@ -7,7 +7,7 @@ Welcome to my Web-Scraper for gold and silver historical data.
 
         and store them locally in a csv file.
 
-    -   app.py is a Flask API that Create an endpoint that will accept HTTP GET with the below arguments, 
+    -   app.py is a Flask REST API that Create an endpoint that will accept HTTP GET with the below arguments, 
         and returns a json time series, mean and variance computed over the specified period.
 
         * start_date - required (iso format like 2017-05-10)
